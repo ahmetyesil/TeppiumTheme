@@ -1,0 +1,20 @@
+{
+    "version"           :   "0.0.1",
+    "license"           :   "MIT",
+    "name"              :   "TeppiumTheme",
+    "shortDescription"  :   { "de": "", "en": "TODO add manually" },
+    "namespace"         :   "TeppiumTheme",
+    "author"            :   "ahmetyesil",
+    "price"             :   0,
+    "categories"        :   [3518],
+    "type"              :   "theme",
+    "serviceProvider"   :   "TeppiumTheme\\Providers\\TeppiumThemeServiceProvider",
+    "dataProviders"     :
+    [
+        {
+            "key"           :"TeppiumTheme\\Containers\\TeppiumThemeContainer",
+            "name"          :"Generated plugin container",
+            "description"   :"Add changes to the CSS file"
+        }
+    ]
+}
