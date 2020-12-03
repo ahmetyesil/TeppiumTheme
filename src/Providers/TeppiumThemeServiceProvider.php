@@ -25,14 +25,14 @@ class TeppiumThemeServiceProvider extends ServiceProvider
         /* Skripte einbinden  */
         $dispatcher->listen('IO.Resources.Import', function (ResourceContainer $container)
         {
-            $container->addScriptTemplate('Stoune::ThemeScript');
+            $container->addScriptTemplate('TeppiumTheme::ThemeScript');
         }, self::PRIORITY);
 
         /* Footer überschreiben  */
         $dispatcher->listen('IO.init.templates', function(Partial $partial)
         {
-            $partial->set('footer', 'Stoune::ThemeFooter');
-            $partial->set( 'page-design', 'Stoune::PageDesign.PageDesign' );
+            $partial->set('footer', 'TeppiumTheme::ThemeFooter');
+            $partial->set( 'page-design', 'TeppiumTheme::PageDesign.PageDesign' );
         }, 0);
 
         /* SingleItem überschreiben */
@@ -40,21 +40,21 @@ class TeppiumThemeServiceProvider extends ServiceProvider
         {
             if ($container->getOriginComponentTemplate()=='Ceres::Item.Components.SingleItem')
             {
-                $container->setNewComponentTemplate('Stoune::Item.Components.SingleItem');
+                $container->setNewComponentTemplate('TeppiumTheme::Item.Components.SingleItem');
             }
         }, self::PRIORITY);
 
         /* ResultFields SingleItemWrapper überschreiben  */
         $dispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) {
             $templateContainer->setTemplates([
-                ResultFieldTemplate::TEMPLATE_SINGLE_ITEM => 'Stoune::ResultFields.SingleItemWrapper'
+                ResultFieldTemplate::TEMPLATE_SINGLE_ITEM => 'TeppiumTheme::ResultFields.SingleItemWrapper'
             ]);
         }, 0);
 
         /* ListItem JSON überschreiben */
         $dispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) {
             $templateContainer->setTemplates([
-                ResultFieldTemplate::TEMPLATE_LIST_ITEM => 'Stoune::ResultFields.ListItem'
+                ResultFieldTemplate::TEMPLATE_LIST_ITEM => 'TeppiumTheme::ResultFields.ListItem'
             ]);
         }, 0);
 
@@ -62,7 +62,7 @@ class TeppiumThemeServiceProvider extends ServiceProvider
         $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
             if( $container->getOriginComponentTemplate() == 'Ceres::Item.Components.ItemImageCarousel')
             {
-                $container->setNewComponentTemplate('Stoune::Item.ItemImageCarousel');
+                $container->setNewComponentTemplate('TeppiumTheme::Item.ItemImageCarousel');
             }
         }, self::PRIORITY);
 
@@ -70,7 +70,7 @@ class TeppiumThemeServiceProvider extends ServiceProvider
         $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
             if( $container->getOriginComponentTemplate() == 'Ceres::Customer.Components.Contact.ContactForm')
             {
-                $container->setNewComponentTemplate('Stoune::Customer.Components.Contact.ContactForm');
+                $container->setNewComponentTemplate('TeppiumTheme::Customer.Components.Contact.ContactForm');
             }
         }, self::PRIORITY);
 
@@ -78,7 +78,7 @@ class TeppiumThemeServiceProvider extends ServiceProvider
         $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
             if( $container->getOriginComponentTemplate() == 'Ceres::Checkout.Components.ShippingProfileSelect')
             {
-                $container->setNewComponentTemplate('Stoune::Checkout.Components.ShippingProfileSelect');
+                $container->setNewComponentTemplate('TeppiumTheme::Checkout.Components.ShippingProfileSelect');
             }
         }, self::PRIORITY);
 
@@ -86,7 +86,7 @@ class TeppiumThemeServiceProvider extends ServiceProvider
         $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
             if( $container->getOriginComponentTemplate() == 'Ceres::Basket.Components.BasketTotals')
             {
-                $container->setNewComponentTemplate('Stoune::Basket.Components.BasketTotals');
+                $container->setNewComponentTemplate('TeppiumTheme::Basket.Components.BasketTotals');
             }
         }, self::PRIORITY);
 
@@ -94,28 +94,28 @@ class TeppiumThemeServiceProvider extends ServiceProvider
         $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
             if( $container->getOriginComponentTemplate() == 'Ceres::ItemList.Components.CategoryItem')
             {
-                $container->setNewComponentTemplate('Stoune::ItemList.Components.CategoryItem');
+                $container->setNewComponentTemplate('TeppiumTheme::ItemList.Components.CategoryItem');
             }
         }, self::PRIORITY);
 
         /* Überschreiben der CategoryItem  */
         $dispatcher->listen('IO.tpl.category.item', function(TemplateContainer $container){
 
-            $container->setTemplate('Stoune::Category.Item.CategoryItem');
+            $container->setTemplate('TeppiumTheme::Category.Item.CategoryItem');
 
         }, self::PRIORITY);
 
         /* Überschreiben der Bestätigungsseite */
         $dispatcher->listen('IO.tpl.confirmation', function (TemplateContainer $container)
         {
-            $container->setTemplate('Stoune::Checkout.OrderConfirmation');
+            $container->setTemplate('TeppiumTheme::Checkout.OrderConfirmation');
 
         }, self::PRIORITY);
 
         /* Überschreiben der SingleItemWrapper - Somit lässt sich das SingleItemView überschreiben und auch die Komponente VariationSelect */
         $dispatcher->listen('IO.tpl.item', function(TemplateContainer $container)
         {
-            $container->setTemplate('Stoune::Item.SingleItemWrapper');
+            $container->setTemplate('TeppiumTheme::Item.SingleItemWrapper');
             return false;
         }, self::PRIORITY);
 
@@ -123,7 +123,7 @@ class TeppiumThemeServiceProvider extends ServiceProvider
         $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
             if( $container->getOriginComponentTemplate() == 'Ceres::Item.Components.VariationSelect')
             {
-                $container->setNewComponentTemplate('Stoune::Item.Components.VariationSelect');
+                $container->setNewComponentTemplate('TeppiumTheme::Item.Components.VariationSelect');
             }
         }, self::PRIORITY);
 
@@ -132,7 +132,7 @@ class TeppiumThemeServiceProvider extends ServiceProvider
         $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
             if( $container->getOriginComponentTemplate() == 'Ceres::Customer.Components.LoginView')
             {
-                $container->setNewComponentTemplate('Stoune::Customer.Components.LoginView');
+                $container->setNewComponentTemplate('TeppiumTheme::Customer.Components.LoginView');
             }
         }, self::PRIORITY);
 
@@ -140,7 +140,7 @@ class TeppiumThemeServiceProvider extends ServiceProvider
         $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
             if( $container->getOriginComponentTemplate() == 'Ceres::Customer.Components.GuestLogin')
             {
-                $container->setNewComponentTemplate('Stoune::Customer.Components.GuestLogin');
+                $container->setNewComponentTemplate('TeppiumTheme::Customer.Components.GuestLogin');
             }
         }, self::PRIORITY);
 
