@@ -1,0 +1,45 @@
+{% import "Ceres::PageDesign.Macros.LayoutContainer" as LayoutContainer %}
+{% set backlink = request.get("backlink") %}
+
+{{ component( "Stoune::Customer.Components.GuestLogin" ) }}
+
+<script type="x/template" id="vue-login-view" >
+    <div class="container-max login">
+      <div class="loginCheckout">
+          <h1>Anmelden</h1>
+          <div class="row">
+              <div class="col-12 gastBestellung">
+                  <div class="col-inner">
+                      <h2>Gastbestellung</h2>
+                      <p>E-Mail-Adresse eingeben und mit der Bestellung fortfahren.</p>
+                      {% if "my-account" not in backlink %}
+                      <guest-login template="#vue-guest-login" backlink="{{ backlink | url_encode }}"></guest-login>
+                      {% endif %}
+                  </div>
+              </div>
+              <div class="col-sm bereitsKunde">
+                  <div class="col-inner">
+                      <h2>Ich bin bereits Kunde</h2>
+                      <login template="#vue-login" backlink="{{ backlink | url_encode }}" has-to-forward="true"></login>
+                  </div>
+              </div>
+              <div class="col-sm keinKunde" id="keinK">
+                  <div class="col-inner">
+                      <h2>Kunde werden</h2>
+                      <p>Einfach registrieren und Ihre Daten nie wieder manuell eingeben. Sie haben immer Zugriff auf Ihre Bestellungen.</p>
+                      <a class="btn btn-primary btn-medium float-right keinKundebutton" href="#registrierung" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="registrierung">
+                          <i class="fa fa-user-plus" aria-hidden="true"></i>
+                      </a>
+
+                      <div class="collapse multi-collapse" id="registrierung">
+                          <registration template="#vue-registration" backlink="{{ backlink | url_encode }}"></registration>
+                      </div>
+
+
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+</script>

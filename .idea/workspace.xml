@@ -2,8 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c468553f-6fcf-4a4b-bd0c-e9eb238c885d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Providers/TeppiumThemeServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Providers/TeppiumThemeServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yo-rc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meta/documents/changelog_de.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meta/documents/changelog_en.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meta/documents/support_contact_de.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meta/documents/support_contact_en.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meta/documents/user_guide_de.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meta/documents/user_guide_en.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meta/images/icon_author_md.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meta/images/icon_author_sm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meta/images/icon_author_xs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meta/images/icon_plugin_md.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meta/images/icon_plugin_sm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meta/images/icon_plugin_xs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meta/images/preview_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Homepage/Homepage.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/PageDesign/PageDesign.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Theme.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ThemeFooter.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ThemeScript.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/TeppiumThemeContainer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Providers/TeppiumThemeServiceProvider.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,13 +46,13 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ahmet\Desktop\Project\Php\teppium-theme" />
       <recent name="C:\Users\ahmet\Desktop\Project\Php\teppium-theme\resources\views" />
       <recent name="C:\Users\ahmet\Desktop\Project\Php\teppium-theme\resources" />
-      <recent name="C:\Users\ahmet\Desktop\Project\Php\teppium-theme" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -55,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607012449711</updated>
-      <workItem from="1607012451209" duration="4911000" />
+      <workItem from="1607012451209" duration="5489000" />
     </task>
     <servers />
   </component>
