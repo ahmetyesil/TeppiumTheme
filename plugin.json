@@ -4,7 +4,7 @@
     "name"              :   "TeppiumTheme",
     "shortDescription"  :   { "de": "", "en": "TODO add manually" },
     "namespace"         :   "TeppiumTheme",
-    "author"            :   "ahmetyesil",
+    "author"            :   "yesil",
     "price"             :   0,
     "categories"        :   [3518],
     "type"              :   "theme",
