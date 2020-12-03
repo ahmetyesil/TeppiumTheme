@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c468553f-6fcf-4a4b-bd0c-e9eb238c885d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Theme.twig" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Theme.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Providers/TeppiumThemeServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Providers/TeppiumThemeServiceProvider.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,10 +24,11 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ahmet\Desktop\Project\Php\teppium-theme\resources\views" />
       <recent name="C:\Users\ahmet\Desktop\Project\Php\teppium-theme\resources" />
       <recent name="C:\Users\ahmet\Desktop\Project\Php\teppium-theme" />
     </key>
@@ -54,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607012449711</updated>
-      <workItem from="1607012451209" duration="3283000" />
+      <workItem from="1607012451209" duration="4911000" />
     </task>
     <servers />
   </component>

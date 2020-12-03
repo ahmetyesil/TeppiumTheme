@@ -2,9 +2,14 @@
 
 namespace TeppiumTheme\Providers;
 
-use Plenty\Plugin\ServiceProvider;
+use IO\Extensions\Functions\Partial;
 use Plenty\Plugin\Events\Dispatcher;
+use Plenty\Plugin\ServiceProvider;
+use Plenty\Plugin\Templates\Twig;
+use IO\Helper\ComponentContainer;
 use IO\Helper\TemplateContainer;
+use IO\Helper\ResourceContainer;
+use IO\Services\ItemSearch\Helper\ResultFieldTemplate;
 
 /**
  * Class TeppiumThemeServiceProvider
@@ -26,5 +31,18 @@ class TeppiumThemeServiceProvider extends ServiceProvider
             $container->setTemplate('TeppiumTheme::Homepage.Homepage');
             return false;
         }, self::PRIORITY);
+
+        $dispatcher->listen('IO.Resources.Import', function (ResourceContainer $container)
+        {
+            $container->addScriptTemplate('TeppiumTheme::ThemeScript');
+        }, self::PRIORITY);
+
+        /* Footer überschreiben  */
+        $dispatcher->listen('IO.init.templates', function(Partial $partial)
+        {
+            $partial->set('footer', 'TeppiumTheme::ThemeFooter');
+            $partial->set( 'page-design', 'TeppiumTheme::PageDesign.PageDesign' );
+        }, 0);
+
     }
 }
