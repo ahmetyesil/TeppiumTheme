@@ -1,4 +1,4 @@
-# Release Notes für LotuTheme
+# Release Notes für TeppiumTheme
 
 ## v0.0.1
 

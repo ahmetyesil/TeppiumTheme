@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/teppium-theme.iml" filepath="$PROJECT_DIR$/.idea/teppium-theme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TeppiumTheme/.idea/teppiumTheme.iml" filepath="$PROJECT_DIR$/../TeppiumTheme/.idea/teppiumTheme.iml" />
     </modules>
   </component>
 </project>
