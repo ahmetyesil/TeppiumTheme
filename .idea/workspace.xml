@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c468553f-6fcf-4a4b-bd0c-e9eb238c885d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Providers/TeppiumThemeServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Providers/TeppiumThemeServiceProvider.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607012449711</updated>
       <workItem from="1607012451209" duration="9410000" />
-      <workItem from="1607385165231" duration="213000" />
+      <workItem from="1607385165231" duration="1007000" />
     </task>
     <servers />
   </component>

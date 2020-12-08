@@ -5,6 +5,7 @@ namespace TeppiumTheme\Providers;
 use Plenty\Plugin\ServiceProvider;
 use Plenty\Plugin\Events\Dispatcher;
 use IO\Helper\TemplateContainer;
+use IO\Helper\ResourceContainer;
 
 /**
  * Class TeppiumThemeServiceProvider
@@ -12,7 +13,7 @@ use IO\Helper\TemplateContainer;
  */
 class TeppiumThemeServiceProvider extends ServiceProvider
 {
-    const PRIORITY = 0;
+    const PRIORITY = 99;
 
     public function register()
     {
@@ -26,5 +27,12 @@ class TeppiumThemeServiceProvider extends ServiceProvider
             $container->setTemplate('TeppiumTheme::Homepage.Homepage');
             return false;
         }, self::PRIORITY);
+
+        $dispatcher->listen('IO.Resources.Import', function (ResourceContainer $resourceContainer)
+        {
+            // The script is imported in the Footer.twig of Ceres
+            $resourceContainer->addStyleTemplate('TeppiumTheme::Theme');
+        }, self::PRIORITY);
+
     }
 }
